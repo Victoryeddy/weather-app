@@ -23,7 +23,9 @@ export const Weather = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if(city.trim() != "")
+    if(city.trim() == ""){
+      return;
+    }
     try {
       const response = await axios.get(
         `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${

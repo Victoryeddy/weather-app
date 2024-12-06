@@ -1,4 +1,3 @@
-// src/Firebase.js
 // firebase.js
 import { initializeApp } from "firebase/app";
 import {
@@ -11,7 +10,7 @@ import {
     deleteDoc,
     addDoc,
     serverTimestamp
-} from "firebase/firestore"; // For Firestore
+} from "firebase/firestore";
 
 
 const firebaseConfig = {
